@@ -1,0 +1,111 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #84bedf, #07a7eb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  color: #fff;
+}
+
+/* Title */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Quiz Container with Glassmorphism */
+.quiz-container {
+  background: rgba(255, 255, 255, 0.292);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(145, 107, 107, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+/* Question Text */
+#question {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btn {
+  background-color: rgba(49, 106, 237, 0.649);
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.btn.correct {
+  background-color: rgba(0, 255, 0, 0.4);
+}
+
+.btn.wrong {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffffcc;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .quiz-container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #question {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
