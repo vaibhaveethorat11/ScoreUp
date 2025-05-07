@@ -13,7 +13,7 @@ ScoreUp is a sleek, responsive quiz app designed to help students practice and t
 
 ## 🚀 Live Demo
 
-👉 [Try the app now on GitHub Pages](https://yourusername.github.io/ScoreUp)
+👉 [Try the app now on GitHub Pages]([https://vaibhaveethorat11.github.io/ScoreUp/])
 
 ---
 
